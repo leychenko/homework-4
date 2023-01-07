@@ -1,0 +1,68 @@
+
+@import url(https://fonts.googleapis.com/css?family=Lato:regular,700,900);
+
+.wrapper {
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+ }
+
+[class*="__container"] {
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 0 15px;
+ }
+/* ========================================================= */
+body{
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.2;
+}
+.page__content {
+	max-width: 900px;
+	margin: 0 auto;
+	padding-top: 50px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+}
+
+.page__block{
+	border: 1px solid purple;
+	border-radius: 15px;
+	padding: 25px 25px;
+	position: relative;
+}
+.page__link{
+	display: block;
+	width: 22px;
+	height: 22px;
+	background: url(../img/plus.svg)center no-repeat;
+	position: absolute;
+	top: 25px;
+	right: 20px;
+	transition: all 0.3s ease 0s;
+}
+.block-page:hover .page__link{
+	transform: rotate(45deg);
+}
+#text{
+	max-width: 750px;
+	margin-top: 15px;
+	display: none;
+}
+/* можно таргетом */
+/* #text:target {
+	display: block;
+} */
+
+.page__block:hover #text{
+	display: block;
+}
+
+.page__block h5{ 
+	font-weight: 700;
+}
